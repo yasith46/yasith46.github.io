@@ -61,15 +61,77 @@ body {
 }
 
 .card {
-    background-color: #414243;
-    color: white;
-    padding: 1vw;
+    background-color: transparent;
+    color: #333;
     border-radius: 10px;
     width: 100%;
     height: 10vh;
     text-align: center;
     font-family: 'Consolas', monospace;
-    border: 1px solid #666;
+    border: 1px solid #7c95a1;
     box-sizing: border-box;
     margin: 0.5vh 1vw;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-card {
+    background-color: #efeff6;
+    overflow: hidden;
+    display: block;
+}
+
+.card-divider {
+    height: 1px;
+    background-color: #7c95a1;
+    margin: 1vh -2vh 1vh -1.3vw;
+}
+
+.card-bg-section {
+    flex: 0 0 50%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.card-content-section {
+    flex: 0 0 50%;
+    width: 100%;
+    background-color: #efeff6;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.profile-pic-container {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.profile-pic {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.pill {
+    padding: 1vh 1vw;
+    border-radius: 9999px;
+    display: inline-block;
+    background-color: #efeff6;
+    border: 1px solid #7c95a1;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    margin: 1.5vh 0.05vw 0 0;
 }
