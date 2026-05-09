@@ -1,0 +1,75 @@
+body {
+  background-color: #FDF6EE;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-screen centered section */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #414243;
+  color: white;
+  padding: 1vw;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Consolas', monospace;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+}
+
+.horizontal-fill {
+  flex: 1;
+}
+
+.vfill {
+  flex: 0 0 auto;
+}
+
+.divider {
+  height: 2px;
+  background-color: #555;
+  margin: 0 1vw;
+  box-sizing: border-box;
+}
+
+.centered-sec-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #414243;
+    color: white;
+    padding: 1vw;
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    margin: 0.5vh 1vw;
+}
