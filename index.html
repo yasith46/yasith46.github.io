@@ -8,11 +8,11 @@
 
 <body>
     <div class="navbar">
-        <button class="button">Yasith Silva / Electronico</button>
+        <button class="button-outlined">Yasith Silva / Electronico</button>
         <div class="horizontal-fill"></div>
-        <button class="button" onclick="window.location.href='projects.html'">Projects</button>
-        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='skills.html'">About</button>
-        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='contact.html'">Contact</button>
+        <button class="button" onclick="window.location.href='underconstruction.html'">Projects</button>
+        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='underconstruction.html'">About</button>
+        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='underconstruction.html'">Contact</button>
     </div>
     <div class="divider"></div>
     <div class="centered-section" style="flex-direction: row;">
@@ -95,29 +95,75 @@
     </div>
 
     <div class="navbar">
-        <button class="button" style="margin-top: 1vh;">Project Showcase</button>
+        <div style="display: flex;">
+            <button class="button-outlined" style="margin-top: 1vh;">Project Showcase</button>
+            <button class="button-outlined" style="margin-left: 0.5vw; margin-top: 1vh; border-color: transparent;" onclick="window.location.href='underconstruction.html'">See More >>></button>
+        </div>
     </div>
 
-    <div class="centered-section" style="flex-direction: row; margin-top: 2vh; height: 60vh;">
+    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 80vh; margin-bottom: 6vh;">
         <div class="centered-sec-col" style="padding: 0 1vw 0 0;">
-            <div class="card" style="height: 60vh; padding: 0;">
-                <div class="card-bg-section">
-                    <img src="img/bg_gradient.png" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="card" style="height: 75vh; padding: 0;">
+                <div class="card-bg-section" style="flex: 0 0 75%;">
+                    <img src="img/expansion1.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div class="card-content-section">
-                    <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 6vh">Breathing Life into <br/>Ideas...</h1>
+                <div class="card-content-section" style="flex: 0 0 25%; padding-top: 1vh;">
+                    <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 0">Chip-Aware Instrument</h1>
+                    <p style="position: absolute; left: 2vw; text-align: left; margin-top: 10vh; font-size: 2.1vh; width: 40vw;">Final Year Project -- A unified hardware/software platform for IC configuration and evaluation... <a href="underconstruction.html" style="color: #333; font-weight: bold; text-decoration: none; font-size: 2.1vh;">Read More >>></a></p>
                 </div>
             </div>
         </div>
-        <div class="centered-sec-col" style="padding: 0 0 0 1vw;">
-            <div class="card" style="height: 60vh; padding: 0;">
-                <div class="card-bg-section">
-                    <img src="img/bg_gradient.png" style="width: 100%; height: 100%; object-fit: cover;">
+         <div class="centered-sec-col" style="padding: 0 1vw 0 0;">
+            <div class="card" style="height: 75vh; padding: 0;">
+                <div class="card-bg-section" style="flex: 0 0 75%;">
+                    <img src="img/andon1.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div class="card-content-section">
-                    <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 6vh">Breathing Life into <br/>Ideas...</h1>
+                <div class="card-content-section" style="flex: 0 0 25%; padding-top: 1vh;">
+                    <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 0">Wireless Reconfigurable Andon</h1>
+                    <p style="position: absolute; left: 2vw; text-align: left; margin-top: 10vh; font-size: 2.1vh; width: 40vw;">A system to alert and document production issues, equipped with maintenace prediction... <a href="underconstruction.html" style="color: #333; font-weight: bold; text-decoration: none; font-size: 2.1vh;">Read More >>></a></p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="navbar" style="background-color: #366177;">
+        <button class="button-outlined" style="margin-top: 5vh; border-color: #ffffff; color: #ffffff;">What I Do</button>
+    </div>
+    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 50vh; margin-bottom: 0; background-color: #366177;">
+        <div class="centered-sec-col" style="padding: 0 1vw 0 0;">
+            <div class="card simple-card" style="height: 20vh; text-align:left; padding: 2vh; padding-left: 1.3vw; background-color: transparent; color: #fff;">
+                <h3 style="margin: 0; margin-bottom: 2vh; margin-left: 0.25vw">01. PCB Design</h3>
+                <div class="card-divider"></div>
+                <p style="font-size: 2.1vh;">I do multilayer PCB designs, including hierarchical schematic design, with capabilities of high-speed signals. Altium Designer and KiCad are my most used ECAD software; however, I can adapt to others fast.</p>
+            </div>
+            <div class="card simple-card" style="height: 20vh; text-align:left; padding: 2vh; padding-left: 1.3vw; background-color: transparent; color: #fff;">
+                <h3 style="margin: 0; margin-bottom: 2vh; margin-left: 0.25vw">03. Firmware Development</h3>
+                <div class="card-divider"></div>
+                <p style="font-size: 2.1vh;">I do Firmware development in C / C++, and Python. I have worked on frameworks such as Arduino, ESP-IDF, STM, and also have worked on Baremetal Projects. Further I have done some work with Embedded Linux.</p>
+            </div>
+        </div>
+        <div class="centered-sec-col" style="padding: 0 1vw 0 0;">
+            <div class="card simple-card" style="height: 20vh; text-align:left; padding: 2vh; padding-left: 1.3vw; background-color: transparent; color: #fff;">
+                <h3 style="margin: 0; margin-bottom: 2vh; margin-left: 0.25vw">02. Internet of Things</h3>
+                <div class="card-divider"></div>
+                <p style="font-size: 2.1vh;">I have worked on several Internet of Things projects. These mainly included technologies, including WiFi, Bluetooth, LoRA, and UWB. In these, I have worked in both the hardware part and the firmware part.</p>
+            </div>
+            <div class="card simple-card" style="height: 20vh; text-align:left; padding: 2vh; padding-left: 1.3vw; background-color: transparent; color: #fff;">
+                <h3 style="margin: 0; margin-bottom: 2vh; margin-left: 0.25vw">04. Frontend Development</h3>
+                <div class="card-divider"></div>
+                <p style="font-size: 2.1vh;">I have worked on frontend development and UI/UX design, including in projects with both web development and Android/iOS development. Further I have experience with React, Typescript, and Kotlin.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 30vh; margin-bottom: 0; background-color: #184257;">
+        <div style="text-align: left; font-family: 'Courier New', Courier, monospace; width: 25%; padding-left: 1vw; color: #fff;">
+            <h1 style="margin-top:0;">Contact Me</h1>
+            <b>Yasith Silva</b><br/>
+            <a href="underconstruction.html" style="color: #fff; text-decoration: none; font-size: 2.1vh;">yasithudana3@gmail.com</a>
+        </div> 
+        <div style="width: 75%">
+            cs
         </div>
     </div>
 </body>
