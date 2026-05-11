@@ -156,3 +156,241 @@ body {
     font-family: 'Consolas', monospace;
     transition: background-color 0.3s ease;
 }
+#cv-title {
+    font-size: 12vh;
+}
+
+#projects-section {
+  height: 80vh; 
+  margin-bottom: 6vh;
+}
+
+#contact-section {
+  flex-direction: row;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .centered-section[style*="flex-direction: row"] {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .centered-sec-col {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .centered-sec-col[style*="flex-direction: row"] {
+        gap: 1vh;
+        height: 25vh !important;
+    }
+
+    .card {
+        margin: 0.5vh 0 !important;
+        width: calc(100% - 0px) !important;    }
+
+    .card:not([style*="height: 48vh"]) {        
+        padding: 2vh 6vw !important;
+        box-sizing: border-box;
+    }
+
+    /* Adjust heights for mobile */
+    .card[style*="height: 48vh"] {
+        height: 35vh !important;
+    }
+
+    .card[style*="height: 35vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    .card[style*="height: 29vh"] {
+        display: none;
+    }
+
+    .card[style*="height: 30vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    .card[style*="height: 75vh"] {
+        height: auto !important;
+        min-height: 50vh;
+        flex-direction: column !important;
+    }
+
+    .card-bg-section[style*="flex: 0 0 75%"],
+    .card-bg-section[style*="flex: 0 0 50%"] {
+        flex: 0 0 auto !important;
+        height: auto !important;
+    }
+
+    .card-content-section[style*="flex: 0 0 25%"],
+    .card-content-section[style*="flex: 0 0 50%"] {
+        flex: 0 0 auto !important;
+        height: auto !important;
+        min-height: 15vh;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        padding: 2vh !important;
+    }
+
+    .card-content-section h1 {
+        margin-top: 1vh !important;
+        position: static !important;
+        left: auto !important;
+        margin-bottom: 1vh !important;
+    }
+
+    .card-content-section p {
+        margin-top: 1.5vh !important;
+        width: 90% !important;
+        overflow-wrap: break-word !important;
+        position: static !important;
+        left: auto !important;
+    }
+
+    .card[style*="height: 20vh"] {
+        height: auto !important;
+        min-height: 18vh;
+    }
+
+    .card[style*="height: 10vh"] {
+        height: auto !important;
+        min-height: 8vh;
+        gap: 1.5vw !important;
+    }
+    .card[style*="background-color: #333"][style*="gap: 3vw"] {
+        gap: 5vw !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .centered-section[style*="height: 80vh"] {
+        height: auto !important;
+    }
+
+    .centered-section[style*="height: 50vh"] {
+        height: auto !important;
+    }
+
+    .centered-section[style*="height: 30vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .vfill {
+        height: 1vh !important;
+    }
+
+    .profile-pic-container {
+        left: 18% !important;
+    }
+
+    .button-outlined {
+        margin-top: 2vh !important; 
+        margin-bottom: 2vh;
+        font-size: 2.5vh;
+        padding: 0.8vw;
+    }
+
+    .button {
+        font-size: 2vh;
+        padding: 0.8vw;
+        margin-left: 0.3vw !important;
+    }
+    #first-button {
+      font-size: 3vh;
+    }
+
+    .navbar {
+        padding: 1vw 0.5vw !important;
+        flex-wrap: wrap;
+        gap: 0.5vw;
+    }
+
+    .navbar:first-of-type > .button {
+        flex: 1;
+        margin-left: 0.5vw !important;
+        margin-right: 0.5vw !important;
+    }
+
+    .navbar:first-of-type > #first-button {
+        flex-basis: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .navbar:first-of-type > .horizontal-fill {
+        display: none;
+    }
+
+    .pill {
+        font-size: 1.8vh;
+        padding: 0.8vh 3vw;
+        margin: 1vh 0.1vw 0 0;
+    }
+
+    p {
+        font-size: 1.8vh !important;
+    }
+
+    h1 {
+        font-size: 4vh !important;
+    }
+    #breathing-title {
+        left: 5vw !important;
+    }
+    #would-done-title {
+        font-size: 2.5vh !important;
+    }
+    #cv-title {
+        font-size: 10vh !important;
+    }
+
+    #article-icon {
+        width: 4vh !important;
+        height: 4vh !important;
+    }    h3 {
+        font-size: 2.25vh !important;
+    }
+
+    #project,
+    #project2 {
+        padding: 0 !important;
+    }
+
+    .button,
+    .button-outlined {
+        padding: 1.5vw 2vw !important;
+    }
+
+    #projects-section {
+      height: auto !important;
+      margin-bottom: 1.5vh;
+    }
+
+    .centered-section[style*="background-color: #184257"] > div:first-child {
+        width: 100% !important;
+        padding-left: 10vw !important;
+        padding-top: 2vh !important;
+    }
+
+    #what-i-do {
+      padding-top: 1vh !important;
+    }
+
+    #what-i-do-content {
+      padding-bottom: 1.5vh !important;
+    }
+
+    #contact-section {
+      flex-direction: column !important;
+    }
+}

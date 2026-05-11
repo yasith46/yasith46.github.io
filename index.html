@@ -31,7 +31,7 @@
       </symbol>
     </svg>
     <div class="navbar">
-        <button class="button-outlined">Yasith Silva / Electronico</button>
+        <button id="first-button" class="button-outlined">Yasith Silva / Electronico</button>
         <div class="horizontal-fill"></div>
         <button class="button" onclick="window.location.href='underconstruction.html'">Projects</button>
         <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='underconstruction.html'">About</button>
@@ -45,7 +45,7 @@
                     <img src="img/bg_gradient.png" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="card-content-section">
-                    <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 6vh">Breathing Life into <br/>Ideas...</h1>
+                    <h1 id="breathing-title" style="position: absolute; left: 2vw; text-align: left; margin-top: 6vh">Breathing Life into <br/>Ideas...</h1>
                 </div>
                 <div class="profile-pic-container">
                     <img src="img/profilepic.jpeg" class="profile-pic" alt="Profile">
@@ -83,7 +83,7 @@
                 <a href="underconstruction.html" style="color: #333; font-weight: bold; text-decoration: none; font-size: 2.1vh;">Read More >>></a></p>
             </div>
             <div class="vfill" style="height: 2vh;"></div>
-            <div class="card" style="height: 55vh; padding: 0; overflow: hidden;">
+            <div class="card" id="expansion-card" style="height: 55vh; padding: 0; overflow: hidden;">
                 <img src="img/expansion.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
@@ -91,13 +91,13 @@
             <div class="centered-sec-col" style="flex-direction: row; padding: 0; height: 30vh;">
                 <div class="card" style="height: 30vh; margin-left: 0; margin-right: 0.5vw; background-color: #FD7250; align-items:left; padding: 2vh; display: flex; flex-direction: column; text-align: left;">
                     <div style="margin-top: auto;">
-                        <svg style="width: 8vh; height: 8vh; margin-top: 2vh; margin-left: -0.1vw; fill: #f7c7bb;"><use href="#icon-article"></use></svg>
-                        <h1 style="font-size: 2.8vh; margin-top: 1vh; margin-bottom: 0.5vh;">What I would've done differently...</h1>
+                        <svg id="article-icon" style="width: 8vh; height: 8vh; margin-top: 2vh; margin-left: -0.1vw; fill: #f7c7bb;"><use href="#icon-article"></use></svg>
+                        <h1 id="would-done-title" style="font-size: 2.8vh; margin-top: 1vh; margin-bottom: 0.5vh;">What I would've done differently...</h1>
                         <a style="font-size: 2.1vh; margin: 0; margin-top: 2vh; color: #333; text-decoration: none;" href="https://medium.com/@yasithudana3/what-would-i-have-done-differently-df5150539706" target="_blank">Read the Article >>></a>
                     </div>
                 </div>
                 <div class="card simple-card" style="height: 30vh; margin-right: 0; margin-left: 0.5vw; text-align: left; padding: 2vh; display: flex; flex-direction: column;">
-                    <h1 style="font-size: 12vh; margin-top: 0; margin-bottom: 0;">CV</h1>
+                    <h1 id="cv-title" style="margin-top: 0; margin-bottom: 0;">CV</h1>
                     <div class="vfill" style="height: 1vh;"></div>
                     <button class="button" style="margin-top: auto; width: 100%; display: flex; align-items: center;" onclick="window.location.href='https://raw.githubusercontent.com/yasith46/yasith46.github.io/main/resources/CV%20-%20Yasith%20Silva.pdf'">
                         <div style="text-align: left;">
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="vfill" style="height: 2vh;"></div>
-            <div class="card" style="height: 41vh; padding: 0; overflow: hidden;">
+            <div class="card" id="sportsense-card" style="height: 41vh; padding: 0; overflow: hidden;">
                 <img src="img/sportsense.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="vfill" style="height: 2vh;"></div>
@@ -140,20 +140,20 @@
         </div>
     </div>
 
-    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 80vh; margin-bottom: 6vh;">
+    <div id="projects-section" class="centered-section" style="flex-direction: row; margin-top: 0;">
         <div class="centered-sec-col" style="padding: 0 0.5vw 0 0;">
-            <div class="card" style="height: 75vh; padding: 0;">
+            <div id="project"class="card" style="height: 75vh; padding: 0;">
                 <div class="card-bg-section" style="flex: 0 0 75%;">
                     <img src="img/expansion1.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="card-content-section" style="flex: 0 0 25%; padding-top: 1vh;">
                     <h1 style="position: absolute; left: 2vw; text-align: left; margin-top: 0">Chip-Aware Instrument</h1>
-                    <p style="position: absolute; left: 2vw; text-align: left; margin-top: 10vh; font-size: 2.1vh; width: 40vw;">Final Year Project -- A unified hardware/software platform for IC configuration and evaluation... <a href="underconstruction.html" style="color: #333; font-weight: bold; text-decoration: none; font-size: 2.1vh;">Read More >>></a></p>
+                    <p style="position: absolute; left: 2vw; text-align: left; margin-top: 10vh; font-size: 2.1vh; width: 80%;">Final Year Project -- A unified hardware/software platform for IC configuration and evaluation... <a href="underconstruction.html" style="color: #333; font-weight: bold; text-decoration: none; font-size: 2.1vh;">Read More >>></a></p>
                 </div>
             </div>
         </div>
          <div class="centered-sec-col" style="padding: 0 0 0 0.5vw;">
-            <div class="card" style="height: 75vh; padding: 0;">
+            <div id="project2" class="card" style="height: 75vh; padding: 0;">
                 <div class="card-bg-section" style="flex: 0 0 75%;">
                     <img src="img/andon1.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
@@ -165,10 +165,10 @@
         </div>
     </div>
 
-    <div class="navbar" style="background-color: #366177;">
+    <div id="what-i-do" class="navbar" style="background-color: #366177;">
         <button class="button-outlined" style="margin-top: 5vh; border-color: #ffffff; color: #ffffff;">What I Do</button>
     </div>
-    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 50vh; margin-bottom: 0; background-color: #366177;">
+    <div id="what-i-do-content" class="centered-section" style="flex-direction: row; margin-top: 0; height: 50vh; margin-bottom: 0; background-color: #366177;">
         <div class="centered-sec-col" style="padding: 0 0.5vw 0 0;">
             <div class="card simple-card" style="height: 20vh; text-align:left; padding: 2vh; padding-left: 1.3vw; background-color: transparent; color: #fff;">
                 <h3 style="margin: 0; margin-bottom: 2vh; margin-left: 0.25vw">01. PCB Design</h3>
@@ -195,7 +195,7 @@
         </div>
     </div>
 
-    <div class="centered-section" style="flex-direction: row; margin-top: 0; height: 30vh; margin-bottom: 0; background-color: #184257;">
+    <div id="contact-section" class="centered-section" style="margin-top: 0; height: 30vh; margin-bottom: 0; background-color: #184257;">
         <div style="text-align: left; font-family: 'Courier New', Courier, monospace; width: 25%; padding-left: 1vw; color: #fff;">
             <h1 style="margin-top:0;">Contact Me</h1>
             <div>
@@ -217,5 +217,60 @@
             
         </div>
     </div>
+
+    <script>
+        // State management for image card visibility
+        const cardVisibilityState = {
+            'expansion-card': false,
+            'sportsense-card': false
+        };
+
+        // Initialize cards on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCardVisibility();
+            // Add toggle functionality to cards if needed
+            const expansionCard = document.getElementById('expansion-card');
+            const sportsenseCard = document.getElementById('sportsense-card');
+            
+            if (expansionCard) {
+                expansionCard.style.cursor = 'pointer';
+                expansionCard.addEventListener('click', function() {
+                    toggleCard('expansion-card');
+                });
+            }
+            
+            if (sportsenseCard) {
+                sportsenseCard.style.cursor = 'pointer';
+                sportsenseCard.addEventListener('click', function() {
+                    toggleCard('sportsense-card');
+                });
+            }
+        });
+
+        function toggleCard(cardId) {
+            cardVisibilityState[cardId] = !cardVisibilityState[cardId];
+            updateCardVisibility();
+        }
+
+        function updateCardVisibility() {
+            const isMobile = window.innerWidth <= 768;
+            
+            Object.keys(cardVisibilityState).forEach(cardId => {
+                const card = document.getElementById(cardId);
+                if (card) {
+                    if (isMobile && !cardVisibilityState[cardId]) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'flex';
+                    }
+                }
+            });
+        }
+
+        // Update visibility on window resize
+        window.addEventListener('resize', function() {
+            updateCardVisibility();
+        });
+    </script>
 </body>
 </html>
