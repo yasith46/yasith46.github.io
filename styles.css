@@ -171,6 +171,7 @@ body {
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
+    /* Layout adjustments */
     .centered-section[style*="flex-direction: row"] {
         flex-direction: column !important;
         height: auto;
@@ -186,16 +187,17 @@ body {
         height: 25vh !important;
     }
 
+    /* Card styling */
     .card {
         margin: 0.5vh 0 !important;
-        width: calc(100% - 0px) !important;    }
+        width: 100% !important;
+    }
 
     .card:not([style*="height: 48vh"]) {        
         padding: 2vh 6vw !important;
         box-sizing: border-box;
     }
 
-    /* Adjust heights for mobile */
     .card[style*="height: 48vh"] {
         height: 35vh !important;
     }
@@ -220,6 +222,17 @@ body {
         flex-direction: column !important;
     }
 
+    .card[style*="height: 20vh"] {
+        height: auto !important;
+        min-height: 18vh;
+    }
+
+    .card[style*="height: 10vh"] {
+        height: auto !important;
+        min-height: 8vh;
+    }
+
+    /* Card sections */
     .card-bg-section[style*="flex: 0 0 75%"],
     .card-bg-section[style*="flex: 0 0 50%"] {
         flex: 0 0 auto !important;
@@ -254,21 +267,20 @@ body {
         left: auto !important;
     }
 
-    .card[style*="height: 20vh"] {
-        height: auto !important;
-        min-height: 18vh;
+    /* Specific card styling */
+    #project,
+    #project2 {
+        padding: 0 !important;
     }
 
-    .card[style*="height: 10vh"] {
-        height: auto !important;
-        min-height: 8vh;
-        gap: 1.5vw !important;
-    }
+    /* Social icons bar */
     .card[style*="background-color: #333"][style*="gap: 3vw"] {
         gap: 5vw !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+    /* Section heights */
     .centered-section[style*="height: 80vh"] {
         height: auto !important;
     }
@@ -282,34 +294,7 @@ body {
         min-height: 25vh;
     }
 
-    .divider {
-        display: none;
-    }
-
-    .vfill {
-        height: 1vh !important;
-    }
-
-    .profile-pic-container {
-        left: 18% !important;
-    }
-
-    .button-outlined {
-        margin-top: 2vh !important; 
-        margin-bottom: 2vh;
-        font-size: 2.5vh;
-        padding: 0.8vw;
-    }
-
-    .button {
-        font-size: 2vh;
-        padding: 0.8vw;
-        margin-left: 0.3vw !important;
-    }
-    #first-button {
-      font-size: 3vh;
-    }
-
+    /* Navigation and UI elements */
     .navbar {
         padding: 1vw 0.5vw !important;
         flex-wrap: wrap;
@@ -331,12 +316,37 @@ body {
         display: none;
     }
 
-    .pill {
-        font-size: 1.8vh;
-        padding: 0.8vh 3vw;
-        margin: 1vh 0.1vw 0 0;
+    .divider {
+        display: none;
     }
 
+    .vfill {
+        height: 1vh !important;
+    }
+
+    /* Buttons */
+    .button,
+    .button-outlined {
+        padding: 1.5vw 2vw !important;
+    }
+
+    .button {
+        font-size: 2vh;
+        margin-left: 0.3vw !important;
+    }
+
+    .button-outlined {
+        margin-top: 2vh !important; 
+        margin-bottom: 2vh;
+        font-size: 2.5vh;
+        padding: 0.8vw;
+    }
+
+    #first-button {
+        font-size: 3vh;
+    }
+
+    /* Typography */
     p {
         font-size: 1.8vh !important;
     }
@@ -344,12 +354,30 @@ body {
     h1 {
         font-size: 4vh !important;
     }
-    #breathing-title {
-        left: 5vw !important;
+
+    h3 {
+        font-size: 2.25vh !important;
     }
+
+    .pill {
+        font-size: 1.8vh;
+        padding: 0.8vh 3vw;
+        margin: 1vh 0.1vw 0 0;
+    }
+
+    /* Specific element styling */
+    .profile-pic-container {
+        left: calc(6vw + 7.5vh) !important;
+    }
+
+    #breathing-title {
+        left: 6vw !important;
+    }
+
     #would-done-title {
         font-size: 2.5vh !important;
     }
+
     #cv-title {
         font-size: 10vh !important;
     }
@@ -357,40 +385,30 @@ body {
     #article-icon {
         width: 4vh !important;
         height: 4vh !important;
-    }    h3 {
-        font-size: 2.25vh !important;
     }
 
-    #project,
-    #project2 {
-        padding: 0 !important;
-    }
-
-    .button,
-    .button-outlined {
-        padding: 1.5vw 2vw !important;
-    }
-
+    /* Section adjustments */
     #projects-section {
-      height: auto !important;
-      margin-bottom: 1.5vh;
+        height: auto !important;
+        margin-bottom: 1.5vh;
     }
 
+    #what-i-do {
+        padding-top: 1vh !important;
+    }
+
+    #what-i-do-content {
+        padding-bottom: 1.5vh !important;
+    }
+
+    /* Contact section */
     .centered-section[style*="background-color: #184257"] > div:first-child {
         width: 100% !important;
         padding-left: 10vw !important;
         padding-top: 2vh !important;
     }
 
-    #what-i-do {
-      padding-top: 1vh !important;
-    }
-
-    #what-i-do-content {
-      padding-bottom: 1.5vh !important;
-    }
-
     #contact-section {
-      flex-direction: column !important;
+        flex-direction: column !important;
     }
 }
