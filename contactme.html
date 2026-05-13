@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Yasith Silva</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        const EMAILJS_PUBLIC_KEY = "REPLACE_WITH_PUBLIC_KEY";
+
+        emailjs.init({
+            publicKey: EMAILJS_PUBLIC_KEY,
+        });
+    })();
+    </script>
+    <script src="emailjs.js"></script>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path fill="inherit" d="M21.33,0H2.67A2.67,2.67,0,0,0,0,2.67V21.34A2.66,2.66,0,0,0,2.67,24H21.33A2.66,2.66,0,0,0,24,21.34V2.67A2.67,2.67,0,0,0,21.33,0ZM7.26,20.67H3.68V9.12H7.26ZM5.45,7.6A2.13,2.13,0,1,1,7.57,5.47,2.12,2.12,0,0,1,5.45,7.6ZM20.67,20.67H17.11V14.61c0-1.67-.64-2.6-1.95-2.6S13,13,13,14.61v6.06H9.54V9.12H13v1.55a4,4,0,0,1,3.48-1.91c2.45,0,4.21,1.5,4.21,4.59Z"/>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path fill="inherit" d="M12,0A12.15,12.15,0,0,0,0,12.3,12.27,12.27,0,0,0,8.2,24c.6.1.83-.26.83-.59s0-1.26,0-2.29c-3,.57-3.8-.75-4-1.44a4.37,4.37,0,0,0-1.23-1.74c-.42-.23-1-.8,0-.82a2.42,2.42,0,0,1,1.84,1.26,2.54,2.54,0,0,0,3.5,1,2.58,2.58,0,0,1,.76-1.65c-2.67-.3-5.46-1.37-5.46-6.07A4.88,4.88,0,0,1,5.61,8.35a4.53,4.53,0,0,1,.12-3.26s1-.32,3.3,1.26a11.18,11.18,0,0,1,6,0c2.3-1.6,3.3-1.26,3.3-1.26a4.53,4.53,0,0,1,.12,3.26,4.8,4.8,0,0,1,1.23,3.31c0,4.72-2.81,5.77-5.47,6.07A3,3,0,0,1,15,20c0,1.64,0,3,0,3.38s.22.71.83.59A12.3,12.3,0,0,0,24,12.3,12.15,12.15,0,0,0,12,0Z"/>
+      </symbol>
+      <symbol id="icon-medium" viewBox="0 0 24 24">
+        <path fill="inherit" d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.59 0-1.07-2.3-1.09-5.3h-.02c.02-3 .5-5.3 1.09-5.3.66 0 1.19 2.58 1.19 5.75z"/>
+      </symbol>
+      <symbol id="icon-youtube" viewBox="0 0 34.28 24">
+        <path fill="inherit" d="M33.57,3.75a4.29,4.29,0,0,0-3-3C27.86,0,17.14,0,17.14,0S6.42,0,3.75.72a4.26,4.26,0,0,0-3,3A44.36,44.36,0,0,0,0,12a44.36,44.36,0,0,0,.72,8.25,4.26,4.26,0,0,0,3,3C6.42,24,17.14,24,17.14,24s10.72,0,13.4-.72a4.29,4.29,0,0,0,3-3A45,45,0,0,0,34.28,12,45,45,0,0,0,33.57,3.75ZM13.71,17.14V6.86L22.62,12Z"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 30 24">
+        <path fill="inherit" d="M3,24a2.88,2.88,0,0,1-2.12-.88A2.88,2.88,0,0,1,0,21V3A2.89,2.89,0,0,1,.88.88,2.88,2.88,0,0,1,3,0H27a2.88,2.88,0,0,1,2.12.88A2.89,2.89,0,0,1,30,3V21a3,3,0,0,1-3,3ZM15,13.5,3,6V21H27V6Zm0-3L27,3H3ZM3,6V6Z"/>
+      </symbol>
+    </svg>
+
+    <div class="navbar">
+        <button id="first-button" class="button-outlined">Yasith Silva / Electronico</button>
+        <div class="horizontal-fill"></div>
+        <button class="button" onclick="window.location.href='index.html'">Home</button>
+        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='underconstruction.html'">Projects</button>
+        <button class="button" style="margin-left: 0.5vw;" onclick="window.location.href='underconstruction.html'">About</button>
+    </div>
+    <div class="divider"></div>
+
+    <div class="centered-section" style="height: auto; padding: 4vh 1vw 1.5vh 1vw;">
+        <div class="card simple-card" style="height: auto; text-align: left; padding: 3vh 2vw 1.5vh 2vw; max-width: 95vw; margin-bottom: 3vh;">
+            <h1 style="margin: 0 0 2vh 0; text-align: center; font-size: 4vh;">Get In Touch</h1>
+            <div class="card-divider"></div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you have any questions or would like to collaborate.</p>
+                    <h3 style="margin-top: 3vh; margin-bottom: 1vh; font-family: 'Consolas', monospace; color: #333;">Contact Details</h3>
+                    <p>
+                        <b>Yasith Silva</b><br/>
+                        <a href="mailto:yasithudana3@gmail.com">yasithudana3@gmail.com</a><br/>
+                        <a href="tel:+94711495119">+94 71 149 5119</a>
+                    </p>
+                    <div class="card" style="height: 8vh; width:70%; background-color: #333; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 3vw; padding-left: 2vw; padding-right: 2vw; margin: 0; margin-top: 2vh; border: none;">
+                        <a href="https://www.linkedin.com/in/yasithsilva/" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 5vh; height: 3.25vh;" fill="#E3E3E3"><use href="#icon-linkedin"></use></svg>
+                        </a>
+                        <a href="https://github.com/yasith46" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 5vh; height: 3.25vh;" fill="#E3E3E3"><use href="#icon-github"></use></svg>
+                        </a>
+                        <a href="https://medium.com/@yasithudana3" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 5vh; height: 3.25vh;" fill="#E3E3E3"><use href="#icon-medium"></use></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@yasithsilva5513" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 5vh; height: 3vh;" fill="#E3E3E3"><use href="#icon-youtube"></use></svg>
+                        </a>
+                        <a href="mailto:yasithudana3@gmail.com" style="display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 5vh; height: 3vh;" fill="#E3E3E3"><use href="#icon-mail"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="sendMail(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

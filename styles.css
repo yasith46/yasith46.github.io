@@ -1,0 +1,523 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FDF6EE;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Full-screen centered section */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #414243;
+  color: white;
+  padding: 1vw;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Consolas', monospace;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.horizontal-fill {
+  flex: 1;
+}
+
+.vfill {
+  flex: 0 0 auto;
+}
+
+.divider {
+  height: 2px;
+  background-color: #555;
+  margin: 0 1vw;
+  box-sizing: border-box;
+}
+
+.centered-sec-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: transparent;
+    color: #333;
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    border: 1px solid #7c95a1;
+    box-sizing: border-box;
+    margin: 0.5vh 1vw;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-card {
+    background-color: #efeff6;
+    overflow: hidden;
+    display: block;
+}
+
+.card-divider {
+    height: 1px;
+    background-color: #7c95a1;
+    margin: 1vh -2vh 1vh -1.3vw;
+}
+
+.card-bg-section {
+    flex: 0 0 50%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.card-content-section {
+    flex: 0 0 50%;
+    width: 100%;
+    background-color: #efeff6;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.profile-pic-container {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.profile-pic {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.pill {
+    padding: 1vh 1vw;
+    border-radius: 9999px;
+    display: inline-block;
+    background-color: #efeff6;
+    border: 1px solid #7c95a1;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    margin: 1.5vh 0.05vw 0 0;
+}
+
+.button-outlined {
+    background-color: transparent;
+    color: #333;
+    padding: 1vw;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Consolas', monospace;
+    transition: background-color 0.3s ease;
+}
+#cv-title {
+    font-size: 12vh;
+}
+
+#projects-section {
+  height: 80vh; 
+  margin-bottom: 6vh;
+}
+
+#contact-section {
+  flex-direction: row;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* Layout adjustments */
+    .centered-section[style*="flex-direction: row"] {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    .centered-sec-col {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .centered-sec-col[style*="flex-direction: row"] {
+        gap: 1vh;
+        height: 25vh !important;
+    }
+
+    /* Card styling */
+    .card {
+        margin: 0.5vh 0 !important;
+        width: 100% !important;
+    }
+
+    .card:not([style*="height: 48vh"]) {        
+        padding: 2vh 6vw !important;
+        box-sizing: border-box;
+    }
+
+    .card[style*="height: 48vh"] {
+        height: 35vh !important;
+    }
+
+    .card[style*="height: 35vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    .card[style*="height: 29vh"] {
+        display: none;
+    }
+
+    .card[style*="height: 30vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    .card[style*="height: 75vh"] {
+        height: auto !important;
+        min-height: 50vh;
+        flex-direction: column !important;
+    }
+
+    .card[style*="height: 20vh"] {
+        height: auto !important;
+        min-height: 18vh;
+    }
+
+    .card[style*="height: 10vh"] {
+        height: auto !important;
+        min-height: 8vh;
+    }
+
+    /* Card sections */
+    .card-bg-section[style*="flex: 0 0 75%"],
+    .card-bg-section[style*="flex: 0 0 50%"] {
+        flex: 0 0 auto !important;
+        height: auto !important;
+    }
+
+    .card-content-section[style*="flex: 0 0 25%"],
+    .card-content-section[style*="flex: 0 0 50%"] {
+        flex: 0 0 auto !important;
+        height: auto !important;
+        min-height: 15vh;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        padding: 2vh !important;
+    }
+
+    .card-content-section h1 {
+        margin-top: 1vh !important;
+        position: static !important;
+        left: auto !important;
+        margin-bottom: 1vh !important;
+    }
+
+    .card-content-section p {
+        margin-top: 1.5vh !important;
+        width: 90% !important;
+        overflow-wrap: break-word !important;
+        position: static !important;
+        left: auto !important;
+    }
+
+    /* Specific card styling */
+    #project,
+    #project2 {
+        padding: 0 !important;
+    }
+
+    /* Social icons bar */
+    .card[style*="background-color: #333"][style*="gap: 3vw"] {
+        gap: 5vw !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* Section heights */
+    .centered-section[style*="height: 80vh"] {
+        height: auto !important;
+    }
+
+    .centered-section[style*="height: 50vh"] {
+        height: auto !important;
+    }
+
+    .centered-section[style*="height: 30vh"] {
+        height: auto !important;
+        min-height: 25vh;
+    }
+
+    /* Navigation and UI elements */
+    .navbar {
+        padding: 1vw 0.5vw !important;
+        flex-wrap: wrap;
+        gap: 0.5vw;
+    }
+
+    .navbar:first-of-type > .button {
+        flex: 1;
+        margin-left: 0.5vw !important;
+        margin-right: 0.5vw !important;
+    }
+
+    .navbar:first-of-type > #first-button {
+        flex-basis: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .navbar:first-of-type > .horizontal-fill {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .vfill {
+        height: 1vh !important;
+    }
+
+    /* Buttons */
+    .button,
+    .button-outlined {
+        padding: 1.5vw 2vw !important;
+    }
+
+    .button {
+        font-size: 2vh;
+        margin-left: 0.3vw !important;
+    }
+
+    .button-outlined {
+        margin-top: 2vh !important; 
+        margin-bottom: 2vh;
+        font-size: 2.5vh;
+        padding: 0.8vw;
+    }
+
+    #first-button {
+        font-size: 3vh;
+    }
+
+    /* Typography */
+    p {
+        font-size: 1.8vh !important;
+    }
+
+    h1 {
+        font-size: 4vh !important;
+    }
+
+    h3 {
+        font-size: 2.25vh !important;
+    }
+
+    .pill {
+        font-size: 1.8vh;
+        padding: 0.8vh 3vw;
+        margin: 1vh 0.1vw 0 0;
+    }
+
+    /* Specific element styling */
+    .profile-pic-container {
+        left: calc(6vw + 7.5vh) !important;
+    }
+
+    #breathing-title {
+        left: 6vw !important;
+    }
+
+    #would-done-title {
+        font-size: 2.5vh !important;
+    }
+
+    #cv-title {
+        font-size: 10vh !important;
+    }
+
+    #article-icon {
+        width: 4vh !important;
+        height: 4vh !important;
+    }
+
+    /* Section adjustments */
+    #projects-section {
+        height: auto !important;
+        margin-bottom: 1.5vh;
+    }
+
+    #what-i-do {
+        padding-top: 1vh !important;
+    }
+
+    #what-i-do-content {
+        padding-bottom: 1.5vh !important;
+    }
+
+    /* Contact section */
+    .centered-section[style*="background-color: #184257"] > div:first-child {
+        width: 100% !important;
+        padding-left: 10vw !important;
+        padding-top: 2vh !important;
+    }
+
+    #contact-section {
+        flex-direction: column !important;
+    }
+}
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 0 0 55%;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: 'Consolas', monospace;
+    margin-bottom: 1vh;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1.5vh 1vw;
+    border: 1px solid #7c95a1;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+    font-size: 16px;
+    background-color: #efeff6;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 16vh;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #414243;
+    background-color: #fff;
+}
+
+.submit-btn {
+    padding: 1.5vh 3vw;
+    background-color: #414243;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Consolas', monospace;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 0 0 40%;
+    text-align: left;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 2vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 1vh 0;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    font-size: 2.1vh;
+}
+
+.contact-info a {
+    color: #414243;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
