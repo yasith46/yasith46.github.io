@@ -423,7 +423,7 @@ body {
 }
 
 .contact-info {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
     text-align: left;
 }
 
@@ -452,7 +452,7 @@ body {
 }
 
 .social-buttons {
-    flex: 0 0 60%;
+    flex: 0 0 45%;
     display: flex;
     flex-direction: column;
     gap: 2vh;
