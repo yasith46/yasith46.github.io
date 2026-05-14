@@ -134,6 +134,14 @@ body {
     border: 3px solid white;
 }
 
+.profile-pic-about {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #7c95a1;
+}
+
 .pill {
     padding: 1vh 1vw;
     border-radius: 9999px;
@@ -493,6 +501,100 @@ body {
     }
 
     .social-buttons {
+        flex: 1;
+    }
+}
+
+/* About Page Styles */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 3vh;
+}
+
+.about-section {
+    flex: 0 0 45%;
+    text-align: left;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.about-image {
+    flex: 0 0 auto;
+}
+
+.about-name {
+    flex: 1;
+}
+
+.about-timeline {
+    flex: 0 0 49%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.skill-category {
+    margin-bottom: 1.5vh;
+}
+
+.skill-category .pill {
+    margin-right: 0.5vw;
+    margin-bottom: 0.8vh;
+}
+
+.timeline-section {
+    margin-bottom: 3vh;
+}
+
+.timeline-section h3 {
+    margin: 0 0 2vh 0;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    font-size: 2.5vh;
+}
+
+.timeline-item {
+    padding: 2vh;
+    background-color: #fff;
+    border-left: 3px solid #7c95a1;
+    margin-bottom: 2vh;
+}
+
+.timeline-item h4 {
+    margin: 0;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    font-size: 2vh;
+}
+
+.timeline-item p {
+    font-family: 'Consolas', monospace;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .about-section {
+        flex: 1;
+    }
+
+    .about-timeline {
         flex: 1;
     }
 }
