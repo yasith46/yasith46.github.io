@@ -584,6 +584,119 @@ body {
     font-family: 'Consolas', monospace;
 }
 
+/* Project Showcase Grid */
+.projects-grid-container {
+    width: 100%;
+    padding: 1vh 0;
+    box-sizing: border-box;
+    background-color: #FDF6EE;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    width: 100%;
+    padding: 0 1vw 3vh 1vw;
+    box-sizing: border-box;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #7c95a1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.project-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-image img {
+    transform: scale(1.01);
+}
+
+.project-card-content {
+    flex: 1;
+    padding: 1.5vh 1.5vw;
+    background-color: #efeff6;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-content h3 {
+    margin: 0 0 1vh 0;
+    font-size: 2.2vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+}
+
+.project-card-content p {
+    margin: 0 0 1vh 0;
+    font-size: 1.9vh;
+    font-family: 'Consolas', monospace;
+    color: #666;
+    line-height: 1.2;
+    flex: 0 0 auto;
+}
+
+.project-card-footer {
+    margin-top: 0;
+}
+
+.project-card-footer a {
+    font-size: 1.9vh;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+        padding: 0 2vh;
+    }
+
+    .project-card-image {
+        flex: 0 0 50%;
+    }
+
+    .project-card-content {
+        padding: 1.5vh 1.2vw;
+    }
+
+    .project-card-content h3 {
+        font-size: 2vh;
+    }
+
+    .project-card-content p {
+        font-size: 1.7vh;
+    }
+
+    .projects-grid-container {
+        padding: 2vh 0;
+    }
+}
+
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
