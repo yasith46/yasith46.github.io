@@ -711,3 +711,311 @@ body {
         flex: 1;
     }
 }
+
+/* Project Detail Page Styles */
+.project-detail-container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FDF6EE;
+    padding: 1vw;
+}
+
+.project-hero {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 3vh;
+    display: flex;
+    gap: 1vw;
+}
+
+.hero-left {
+    flex: 0 0 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #7c95a1;
+}
+
+.hero-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.hero-right-top,
+.hero-right-bottom {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #7c95a1;
+}
+
+.hero-right-top img,
+.hero-right-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 4vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    margin: 0 0 1vh 0;
+}
+
+.project-metadata {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 0.5vh;
+    font-family: 'Consolas', monospace;
+    font-size: 2vh;
+    color: #666;
+}
+
+.project-description {
+    background-color: #fff;
+    border: 1px solid #7c95a1;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+    line-height: 1.8;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    font-size: 2.1vh;
+}
+
+.project-description p {
+    margin: 0 0 2vh 0;
+}
+
+.project-description p:last-child {
+    margin-bottom: 0;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    margin-bottom: 3vh;
+}
+
+.project-gallery-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7c95a1;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-gallery-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+    flex: 0 0 35vh;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery-item:hover .gallery-image img {
+    transform: scale(1.02);
+}
+
+.gallery-description {
+    padding: 1.5vh 1.5vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-skills-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8vh;
+    margin-bottom: 3vh;
+    margin-top: 0.5vh;
+}
+
+.project-skills-inline .pill {
+    padding: 0.6vh 1.2vw;
+    border-radius: 9999px;
+    background-color: #efeff6;
+    border: 1px solid #7c95a1;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    font-size: 1.7vh;
+    color: #333;
+}
+
+.project-skills {
+    background-color: #fff;
+    border: 1px solid #7c95a1;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+}
+
+.project-skills h3 {
+    font-size: 2.8vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    margin: 0 0 2vh 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.skills-container .pill {
+    padding: 1vh 1.5vw;
+    border-radius: 9999px;
+    display: inline-block;
+    background-color: #efeff6;
+    border: 1px solid #7c95a1;
+    text-align: center;
+    font-family: 'Consolas', monospace;
+    font-size: 1.9vh;
+    color: #333;
+    margin: 0;
+}
+
+.gallery-description h4 {
+    margin: 0 0 0.5vh 0;
+    font-size: 2.2vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+}
+
+.gallery-description p {
+    margin: 0;
+    font-size: 1.9vh;
+    font-family: 'Consolas', monospace;
+    color: #666;
+    line-height: 1.4;
+}
+
+.project-team {
+    background-color: #fff;
+    border: 1px solid #7c95a1;
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+}
+
+.team-title {
+    font-size: 3vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    margin: 0 0 2vh 0;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    gap: 2vw;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member-image {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7c95a1;
+    margin: 0 auto 1vh;
+}
+
+.team-member-name {
+    font-size: 2.2vh;
+    font-family: 'Consolas', monospace;
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 0.5vh 0;
+}
+
+.team-member-role {
+    font-size: 1.9vh;
+    font-family: 'Consolas', monospace;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-left {
+        flex: 0 0 auto;
+        height: 35vh;
+    }
+
+    .hero-right {
+        flex: 0 0 auto;
+        gap: 1vw;
+        height: 35vh;
+    }
+
+    .project-title {
+        font-size: 3vh;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .project-hero {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        height: 30vh;
+    }
+
+    .hero-right {
+        height: 30vh;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .project-metadata {
+        flex-direction: column;
+        gap: 0.5vh;
+    }
+}
