@@ -1,0 +1,21 @@
+#first-button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#first-button:hover {
+  background-color: #f0f0f0;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  width: 5vw;
+  text-align: center;
+}
+
+.button-outlined {
+  text-decoration: none;
+  display: inline-block;
+}
